@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>测试植株水量系统</title>
+    <link rel="stylesheet" type="text/css" href="Plants_watering3.css">
+    <script type="text/javascript" src="Plants_watering3.js"></script>
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+</head>
+	<body onload="load1();load2()">
+	<div class="content1">
+		<div class="a">
+			<canvas id="temp1" ></canvas>
+			<p>Temperature</p>
+		</div>
+        <div class="a">
+			<canvas id="ligh1"></canvas>
+			<p>Lightintensity</p>
+		</div>
+	</div>
+
+	<div class="content2">
+    	<div class="b">
+			<canvas id="humi1"></canvas>
+			<p>Humidity</p>
+		</div>
+		<div class="b">
+			<canvas id="soli1"></canvas>
+			<p>Solidhumidity</p>
+		</div>
+	</div>
+    <div class="content3">
+        <div class="c">
+            <img src="img/温度.png">
+            <p>Temperature:</p>
+            <strong id="temp2"></strong>
+        </div>
+        <div class="c">
+            <img src="img/湿度.png">
+            <p>Humidity:</p>
+            <strong id="humi2"></strong>
+        </div>
+        <div class="c">
+            <img src="img/光照强度.png">
+            <p>Lightintensity:</p>
+            <strong id="ligh2"></strong>
+        </div>
+        <div class="c">
+            <img src="img/土壤湿度.png">
+            <p>Solidhumidity:</p>
+            <strong id="soli2"></strong>
+        </div>
+        <strong id="color">红色缺水,绿色正常</strong>
+    </div>
+    	
+</body>
